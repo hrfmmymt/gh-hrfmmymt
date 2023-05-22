@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Hello gh-hrfmmymt!"
+url=$(gh api user --jq .html_url)
+
+open $url
 
 # Snippets to help get started:
 
